@@ -1,0 +1,10 @@
+{
+  "name": "Supernova AI - Spoken English Tutor",
+  "description": "Mobile-first AI spoken English tutor app with live speech feedback, regional language explanations, and interactive lessons.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

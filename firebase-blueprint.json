@@ -1,0 +1,47 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profile",
+      "description": "User profile and progress statistics",
+      "type": "object",
+      "properties": {
+        "displayName": { "type": "string" },
+        "email": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "nativeLanguage": { "type": "string" },
+        "streakDays": { "type": "number" },
+        "xpPoints": { "type": "number" },
+        "level": { "type": "string" },
+        "totalSpeakingMinutes": { "type": "number" },
+        "completedLessonsCount": { "type": "number" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["displayName", "email"]
+    },
+    "practice_logs": {
+      "title": "Practice Logs",
+      "description": "User audio speaking practice session logs",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "topic": { "type": "string" },
+        "accuracy": { "type": "number" },
+        "duration": { "type": "string" },
+        "correctionsCount": { "type": "number" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["userId", "topic"]
+    },
+    "mistake_vaults": {
+      "title": "Mistake Vaults",
+      "description": "Personalized SRS mistake vault items",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "items": { "type": "array" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["userId"]
+    }
+  }
+}
